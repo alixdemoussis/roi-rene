@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+ body{
+   font-family: "Roboto", Georgia, Serif;
+ }
+
+ .container{
+   width:90%;
+ }
+
+ /* MENU */
+
+ nav .brand-logo{
+   font-size:60px;
+   text-align:center;
+   letter-spacing: 6px;
+ }
+
+ nav{
+   font-family:'Roboto';
+   height:100px;
+   background-color:#b51c26;
+ }
+
+ nav li a{
+   font-size:12px;
+ }
+
+ nav ul li{
+   letter-spacing:4px;
+   padding-right:20px;
+   line-height: 100px;
+ }
+
+ /* OTHERS */
+
+ .parallax-container {
+   height: 300px;
+   width: 100%;
+ }
+ .chip{
+   margin-right:2px;
+ }

@@ -8,7 +8,84 @@
 </head>
 <body>
 
-<%= yield %>
+<!-- <%= yield %> -->
 
+<nav>
+   <div class="nav-wrapper">
+     <a href="#!" style="text-transform:uppercase;" class="brand-logo"><img style="width: 450px;" src="<%= image_url('logo.png') %>" /></a>
+     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     <ul class="right hide-on-med-and-down">
+       <li><a href="sass.html">A propos</a></li>
+       <li><a href="collapsible.html">Nos spectacles</a></li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+     <ul class="side-nav" id="mobile-demo">
+       <li><a href="sass.html">A propos</a></li>
+       <li><a href="collapsible.html">Nos spectacles</a></li>
+       <li><a href="mobile.html">Contact</a></li>
+     </ul>
+   </div>
+ </nav>
+
+ <!-- SLIDER -->
+
+ <div class="slider">
+   <ul class="slides">
+     <li>
+       <img src="http://www.theatredepoche-montparnasse.com/wp-content/uploads/2015/11/SLIDE-PAGE3.jpg"> <!-- random image -->
+       <div style="background-color:rgba(181, 28, 38, 0.7);padding:20px;height:250px;" class="caption center-align">
+         <h1 style="font-family:'Futura';font-size:50px;">AMOK cartonne !</h1>
+         <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+     </li>
+     <li>
+       <img src="http://www.lucernaire.fr/img/cms/AFFICHE%20Le%20jeu%20de%20lamour%20et%20du%20hasard.jpg"> <!-- random image -->
+       <div style="background-color:rgba(181, 28, 38, 0.7);padding:20px;height:250px;" class="caption center-align">
+         <h1 style="font-family:'Futura';font-size:50px;">Le jeu de l'amour et du hasard !</h1>
+         <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
+     </li>
+   </ul>
+ </div>
+
+ <!-- CONTAINER -->
+
+ <div class="container"><br />
+ <h5 style="font-family:'Futura';font-size:25px;color:#e53131;">NOTRE PROGRAMMATION</h5><br/>
+ <h5 style="font-family:'Futura';font-size:17px;color:white;background-color:#b51c26;width:140px;padding:5px;text-transform:uppercase;">Salle du Roi</h5>
+
+ <div class="row" style="">
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/1" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/9" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/3" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/4" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/5" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/6" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/8" /></a></div>
+ </div>
+ <h5 style="font-family:'Futura';font-size:17px;color:white;background-color:#b51c26;width:180px;padding:5px;text-transform:uppercase;">Salle de la reine</h5>
+ <div class="row" style="">
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/1" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/9" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/3" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/4" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/5" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/6" /></a></div>
+   <div class="col l1 m3 s3" style="margin-right:50px;"><a href="#"><img src="http://lorempicsum.com/nemo/135/190/8" /></a></div>
+ </div>
+</div>
+
+
+ <!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<script type="text/javascript">
+$( document ).ready(function(){
+ $(".button-collapse").sideNav();
+ $('.slider').slider({full_width: true, indicators: false});
+
+})
+
+</script>
 </body>
 </html>
